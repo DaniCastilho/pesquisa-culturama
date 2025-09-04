@@ -49,7 +49,7 @@
 
                 <label for="maritalStatus">Estado civil:</label>
                 <select id="maritalStatus" name="userMaritalStatus">
-                    <option value="notInformed">Selecione...</option>
+                    <option value="">Selecione...</option>
                     <option value="casado">Casado</option>
                     <option value="solteiro">Solteiro</option>
                     <option value="divorciado">Divorciado</option>
@@ -58,6 +58,7 @@
 
                 <label for="state">Estado:</label>
                 <select id="state" name="userState" required>
+                    <option value="">Selecione...</option>
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
                     <option value="amapa">Amapá</option>
@@ -142,13 +143,15 @@
             <fieldset>
                 <legend>Confirmações</legend>
 
-                <input type="checkbox" name="lgpd" id="termLgpd" required>
+                <input type="checkbox" name="lgpd" id="termLgpd" value="confirmed" required>
                 <label for="termLgpd">Aceito participar da pesquisa</label>
                 <br>
-                <input type="checkbox" name="userGetResult" id="getResult">
-                <label for="getResul">Receber resultado por email</label>
+                <input type="checkbox" name="userGetResult" id="getResult" value="confirmed">
+                <label for="getResult">Receber resultado por email</label>
             </fieldset>
+
             <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
        </form>
     </section>    
 </body>
