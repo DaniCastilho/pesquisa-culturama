@@ -42,4 +42,66 @@ fieldset{
 }
 legend{
     font-weight: bold;
+    padding: 0 10px;
+}
+
+p{
+    margin-bottom: 15px
+}
+
+input, select, textarea{
+    width: 100%;
+    padding:10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea{
+    min-height: 100px;
+}
+
+input[type="radio"], 
+input[type="checkbox"]{
+    width: auto;
+}
+
+input[type="color"]{
+    width: 40px;
+    padding: 0px 5px;
+}
+
+label{
+    margin-bottom: 5px;
+    display: inline-block
+}
+
+input:focus{
+    border-color: cornflowerblue;
+    outline: none;
+}
+
+input:valid{
+    border-color: green;
+}
+input:invalid{
+    border-color: red;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;    
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+    color: #fff;
+}
+button[type="reset"]:hover{
+    background-color: orangered;
+    color: #fff;
 }
