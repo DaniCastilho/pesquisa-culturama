@@ -76,6 +76,16 @@ label{
     display: inline-block
 }
 
+input[type="tel"], 
+input[type="file"]{
+    margin-bottom: 0;
+}
+
+small{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
 input:focus{
     border-color: cornflowerblue;
     outline: none;
